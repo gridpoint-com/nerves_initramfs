@@ -11,6 +11,9 @@ repl: build
 target:
 	cd builder && ./build-all.sh
 
+target_one:
+	cd builder && ./build-one.sh $(config)
+
 build:
 	$(MAKE) -C src
 	$(MAKE) -C tests/fixture
@@ -28,5 +31,6 @@ help:
 	@echo "repl   - Start up a repl on the host"
 	@echo "clean  - Clean up the host build and tests"
 	@echo "target - Build nerves_initramfs for all configured targets"
+	@echo "target_one config=/path/to/config - Build nerves_initramfs for the config target"
 
 .PHONY: all check repl clean help
