@@ -29,3 +29,6 @@ fi
 cp "o/$base/images/rootfs.cpio.gz" "../$base.gz"
 cp "o/$base/images/rootfs.cpio.xz" "../$base.xz"
 
+if [ -f "o/$base/images/rootfs.cpio.uboot" ]; then
+    cp "o/$base/images/rootfs.cpio.uboot" "../$base.uboot"
+fi
