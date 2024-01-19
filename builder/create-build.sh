@@ -91,6 +91,8 @@ fi
 
 BUILDROOT_STATE_FILE=$BASE_DIR/buildroot-$BUILDROOT_VERSION/.custom-project-br-state
 BUILDROOT_EXPECTED_STATE_FILE=$BUILD_DIR/.custom-project-expected-br-state
+mkdir -p ${BASE_DIR}/patches/buildroot
+
 "$BASE_DIR/scripts/buildroot-state.sh" $BUILDROOT_VERSION "$BASE_DIR/patches" > "$BUILDROOT_EXPECTED_STATE_FILE"
 
 create_buildroot_dir() {
