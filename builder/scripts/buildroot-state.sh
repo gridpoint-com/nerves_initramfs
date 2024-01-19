@@ -26,8 +26,8 @@ if [[ -z $BR_VERSION || -z $BR_PATCH_DIR ]]; then
     exit 1
 fi
 if [[ ! -d $BR_PATCH_DIR ]]; then
-    echo "ERROR: Buildroot patch directory invalid"
-    exit 1
+    echo "WARNING: Buildroot patch directory does not exist"
+    exit 0
 fi
 
 # Trust the passed in version
