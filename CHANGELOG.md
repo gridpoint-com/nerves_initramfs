@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.6.4
+
+* fwup 1.10.1
+* buildroot 2024.02
+* busybox: add support for udhcpc and tftp
+* Add fwup-tftp script to allow flashing via tftp
+
+## v0.6.3
+
+* create patches/buildroot dir
+
+## v0.6.2
+
+* Don't fail if there aren't any patches
+
+## v0.6.1
+
+* buildroot-2023.08.4
+
+## v0.6.0
+
+* Add support for gridpoint-edge
+* fwup 1.10.0
+
 ## v0.5.0
 
 * New features
