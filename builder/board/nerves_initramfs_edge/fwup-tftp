@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+serverip=$(udhcpc 2>&1|grep serverid|cut -f2 -d=)
+tftp -g -r edge_firmware.fw -l - ${serverip} 2>/dev/null | fwup -ad /dev/mtdblock1 -i - -t complete --unsafe
+
+reboot -f
