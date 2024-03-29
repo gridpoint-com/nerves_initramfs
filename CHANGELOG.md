@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.7.1
+
+* fwup-tftp: Add sleep to allow err_exit output to get displayed
+
 ## v0.7.0
 
 * fwup 1.10.1
