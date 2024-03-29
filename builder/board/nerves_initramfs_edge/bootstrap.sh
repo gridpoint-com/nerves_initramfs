@@ -2,10 +2,11 @@
 set -e
 
 err_exit() {
-  echo "Failed to flash firmware via USB"
-  echo
-  echo "You can try flashing via tftp with:"
-  echo "fwup-tftp"
+  echo "Failed to flash firmware via USB" 1>&2
+  echo 1>&2
+  echo "You can try flashing via tftp with:" 1>&2
+  echo "fwup-tftp" 1>&2
+  sleep 1
 }
 
 trap 'err_exit' ERR
