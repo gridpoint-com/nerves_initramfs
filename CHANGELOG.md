@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.8.0
+
+* Build using same gcc-13.2.0 toolchain that the nerves_system uses
+
 ## v0.7.1
 
 * fwup-tftp: Add sleep to allow err_exit output to get displayed
